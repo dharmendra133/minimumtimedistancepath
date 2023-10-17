@@ -1,0 +1,37 @@
+CREATE TABLE States(
+	id int primary key not null,
+    mode varchar(2),
+    src varchar(30),
+    dest varchar(50),
+    price int,
+    timereq float
+
+);
+
+
+
+INSERT INTO States VALUES(1,'F','Delhi','Chandigarh',2000.0,2.0);
+INSERT INTO States VALUES(2,'B','Delhi','Chandigarh',700.0,6.0);
+INSERT INTO States VALUES(3,'T','Delhi','Patiala',1100.0,6.0);
+
+INSERT INTO States VALUES(4,'B','Delhi','Patiala',900.0,8.0);
+INSERT INTO States VALUES(5,'F','Delhi','Jammu',7000.0,4.2);
+INSERT INTO States VALUES(6,'B','Jammu','Katra',200.0,2.0);
+
+INSERT INTO States VALUES(7,'T','Jammu','Patiala',1100.0,11.0);
+INSERT INTO States VALUES(8,'T','Patiala','Katra',800.0,6.0);
+INSERT INTO States VALUES(9,'B','Delhi','Katra',700.0,7.0);
+
+INSERT INTO States VALUES(10,'F','Chandigarh','Delhi',2000.0,2.0);
+INSERT INTO States VALUES(11,'B','Chandigarh','Delhi',700.0,6.0);
+INSERT INTO States VALUES(12,'T','Patiala','Delhi',1100.0,6.0);
+
+INSERT INTO States VALUES(13,'B','Patiala','Delhi',900.0,8.0);
+INSERT INTO States VALUES(14,'F','Jammu','Delhi',7000.0,4.2);
+INSERT INTO States VALUES(15,'B','Katra','Jammu',200.0,2.0);
+
+INSERT INTO States VALUES(16,'T','Patiala','Jammu',1100.0,11.0);
+INSERT INTO States VALUES(17,'T','Katra','Patiala',800.0,6.0);
+INSERT INTO States VALUES(18,'B','Katra','Patiala',700.0,7.0);
+
+Select * from States;
